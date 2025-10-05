@@ -56,7 +56,7 @@ This project leverages machine learning algorithms to predict Titanic passenger 
 
 ## 🛠️ Technologies Used
 
-- **Machine Learning**: Random Forest Classifier, Logistic Regression, Support Vector Machine (`scikit-learn`)
+- **Machine Learning**: Naive Bayes: GaussianNB, Logistic Regression, Random Forest: RandomForestClassifier(`scikit-learn`)
 - **Programming Language**: Python 3.9+
 - **Libraries**:
   - `scikit-learn`: For building and training ML models
@@ -66,7 +66,7 @@ This project leverages machine learning algorithms to predict Titanic passenger 
   - `matplotlib`: For static plots
   - `seaborn`: For statistical visualizations
   - `streamlit`: For creating the multi-page interactive web application
-- **Development Environment**: Jupyter Notebook / Google Colab (model training), Anaconda Navigator
+- **Development Environment**: Google Colab (model training)/Jupyter Notebook, Anaconda Navigator
 - **Version Control**: GitHub
 
 ---
@@ -88,9 +88,9 @@ This project leverages machine learning algorithms to predict Titanic passenger 
 
 ---
 
-## 📊 Model Performance
+## 📊 Best Model Performance
 
-- **Algorithm**: Random Forest Classifier
+- **Algorithm**:Logistic Regression
 - **Accuracy**: 82%
 - **Precision**: 80%
 - **Recall**: 75%
@@ -107,7 +107,7 @@ titanic-survival-prediction/
 │
 ├── app.py                          # Main Streamlit application (multi-page)
 ├── best_model.pkl                  # Trained ML model (pickle file)
-├── titanic_data.csv                # Titanic dataset
+├── titanic.csv                     # Titanic dataset
 ├── model_metrics.pkl               # Model performance metrics
 ├── create_model_metrics.py         # Script to generate metrics
 ├── requirements.txt                # Python dependencies
@@ -132,8 +132,8 @@ cd titanic-survival-prediction
 ### Step 2: Create Virtual Environment
 ```bash
 # Using conda
-conda create -n titanic_app python=3.9
-conda activate titanic_app
+conda create -n app python=3.9
+conda activate  app
 
 # OR using venv
 python -m venv venv
@@ -232,4 +232,4 @@ The application will automatically open in your default web browser at `http://l
 
 **Made with ❤️ and Python**
 
-*"Analyzing history to predict outcomes - A tribute to the passengers of the Titanic"*
+*"Analyzing history to predict outcomes - A tribute to the passengers of the Titanic 🕯️ "*
