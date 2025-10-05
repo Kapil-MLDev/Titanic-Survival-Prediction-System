@@ -73,7 +73,7 @@ This project leverages machine learning algorithms to predict Titanic passenger 
 
 ## 📂 Dataset
 
-- **Filename**: `titanic_data.csv`
+- **Filename**: `titanic.csv`
 - **Source**: Kaggle Titanic Dataset
 - **Description**: Contains passenger information including survival status, class, demographics, family relationships, fare, and embarkation port
 - **Size**: 891 passengers with 11 features
