@@ -202,30 +202,10 @@ The application will automatically open in your default web browser at `http://l
 - Add more ML models (XGBoost, Neural Networks)
 - Implement ensemble methods for improved accuracy
 - Add SHAP values for enhanced model interpretability
-- Deploy to cloud platforms (Heroku, AWS, Streamlit Cloud)
+- Deploy to cloud platforms (AWS, Streamlit Cloud)
 - Add user authentication and prediction history
 - Implement real-time model retraining functionality
-
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
 ## 👤 Author
 
 **S.Kapila Deshapriya**
