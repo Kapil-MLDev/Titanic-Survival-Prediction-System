@@ -751,8 +751,8 @@ elif page == "📉 Model Performance":
         with col1:
             st.markdown("""
             **Model Type**
-            - Algorithm: Random Forest / Logistic Regression/ Naive Bayes
-            - Best-Algorithm :- Logistic Regression
+            - Algorithm: Random Forest / Logistic Regression / Naive Bayes
+            - Best Algorithm: Logistic Regression
             - Training Date: January 2025
             - Version: 1.0
             """)
@@ -768,21 +768,14 @@ elif page == "📉 Model Performance":
         # Model Comparison (if multiple models were trained)
         st.header("🔄 Model Comparison")
         
-        # comparison_data = pd.DataFrame({
-        #     'Model': ['Logistic Regression', 'Random Forest', 'Naive Bayes'],
-        #     'Accuracy': [0.78, 0.82, 0.80, 0.81],
-        #     'Precision': [0.76, 0.80, 0.78, 0.79],
-        #     'Recall': [0.72, 0.75, 0.74, 0.76],
-        #     'F1-Score': [0.74, 0.77, 0.76, 0.77]
-        # })
-    comparison_data = pd.DataFrame({
-    'Model': ['Logistic Regression', 'Random Forest', 'Naive Bayes'],
-    'Accuracy': [0.78, 0.82, 0.80],
-    'Precision': [0.76, 0.80, 0.78],
-    'Recall': [0.72, 0.75, 0.74],
-    'F1-Score': [0.74, 0.77, 0.76]
-})
-
+        comparison_data = pd.DataFrame({
+            'Model': ['Logistic Regression', 'Random Forest', 'Naive Bayes'],
+            'Accuracy': [0.78, 0.82, 0.80],
+            'Precision': [0.76, 0.80, 0.78],
+            'Recall': [0.72, 0.75, 0.74],
+            'F1-Score': [0.74, 0.77, 0.76]
+        })
+        
         # Highlight best model
         st.dataframe(
             comparison_data.style.highlight_max(axis=0, subset=['Accuracy', 'Precision', 'Recall', 'F1-Score'], color='lightgreen'),
@@ -862,7 +855,7 @@ Generated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
             mime="text/plain"
         )
 
-
+# Footer
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666; padding: 2rem 0;'>
