@@ -751,7 +751,8 @@ elif page == "📉 Model Performance":
         with col1:
             st.markdown("""
             **Model Type**
-            - Algorithm: Random Forest / Logistic Regression
+            - Algorithm: Random Forest / Logistic Regression/ Naive Bayes
+            - Best-Algorithm :- Logistic Regression
             - Training Date: January 2025
             - Version: 1.0
             """)
@@ -768,7 +769,7 @@ elif page == "📉 Model Performance":
         st.header("🔄 Model Comparison")
         
         comparison_data = pd.DataFrame({
-            'Model': ['Logistic Regression', 'Random Forest', 'Support Vector Machine', 'Neural Network'],
+            'Model': ['Logistic Regression', 'Random Forest', 'Naive Bayes'],
             'Accuracy': [0.78, 0.82, 0.80, 0.81],
             'Precision': [0.76, 0.80, 0.78, 0.79],
             'Recall': [0.72, 0.75, 0.74, 0.76],
@@ -841,7 +842,7 @@ ROC AUC Score: {roc_auc:.2f}
 Model Details:
 --------------
 Features Used: Pclass, Sex, Age, SibSp, Parch, Fare, Embarked
-Training Date: January 2025
+Training Date: Oct 2025
 Model Version: 1.0
 
 Generated: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
