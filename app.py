@@ -73,10 +73,10 @@ def load_model_metrics():
     except:
         # Return dummy metrics if file doesn't exist
         return {
-            'accuracy': 0.82,
+            'accuracy': 0.79,
             'precision': 0.80,
-            'recall': 0.75,
-            'f1_score': 0.77,
+            'recall': 0.80,
+            'f1_score': 0.80,
             'y_true': None,
             'y_pred': None,
             'y_pred_proba': None
